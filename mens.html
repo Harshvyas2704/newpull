@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mens.css" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5091a168cb.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- navbar starts -->
+    
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <h1 class="name">Ban<span>gg</span>ood</h1>
+                    <p>Global leading online shop</p>
+                </div>
+                <div>
+                    <span>
+                        <input type="text" placeholder="Search here" id="search">
+                        <i class="fa-solid fa-magnifying-glass i"></i>
+                    </span>
+                </div>
+                <div class="country">
+                    <span>
+                        <img src="https://cdn.pixabay.com/photo/2012/04/10/23/03/india-26828__340.png" alt="Flag">
+                        <p class="ship">ship to</p>
+                    </span>
+                    <p class="ship india">INDIA</p>
+                </div>
+                <div class="userInfo">
+                    <i class="fa-solid fa-user i"></i>
+                    <p class="hello">Hello</p>
+                    <p id="userName">---</p>
+                    <div class="menu">
+                        <p class="signIn">Sign In</p>
+                        <p class="joinUs">Join us</p>
+                        <div class="sub-menu">
+                            <p>My Orders</p>
+                            <p>My Wishlist</p>
+                            <p>My Coupons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <i id="goToCcart" class="fa-solid fa-cart-shopping"></i>
+                    <div>
+                        <!-- button for cart  -->
+                        <button id="cart-btn"><a id="next" href="carts.html">My Cart</a></button>
+                 </div>
+                    <div class="total">
+                        <p class="total-item"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="categories">
+                <p>Men's</p>
+                <p>Women's</p>
+                <p>Shoes's</p>
+                <p>Sports's</p>
+                <p>Electronics's</p>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!-- navbar ends -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- heading of the page starts -->
+    <div id="heading">
+        <div>
+            <h1>Men's Clothing</h1>
+        </div>
+        <div>
+            <p>Latest Looks For You</p>
+        </div>
+    </div>
+
+    <!-- heading of the page ends -->
+
+    
+    
+     <!-- header starts -->
+
+    <div id="header" >
+          <div >
+              <p id="top"><a href="mens.html">Top</a></p>
+              <p><a href="mens.html">Bottoms</a></p>
+              <p><a href="mens.html">Outwear</a></p>
+              <p><a href="mens.html">Outdoor</a></p>
+              <p><a href="mens.html">Sleepwere</a></p>
+          </div>
+          <div>
+              <img src="https://imgaz.staticbg.com/banggood/os/202202/20220214202624_157.jpg.webp" alt="">
+          </div>
+    </div>
+    <!-- header ends -->
+
+
+<!-- flash Deal outer box starts -->
+    <div id="outerbox">
+        <div id="flashDealHead">
+            <div><h2><i id="iconflash" class="fa-solid fa-bolt"></i> Flash Deals</h2></div>
+            <div id="seemore">
+                <p><a href=""> See more <i class="fa-solid fa-angle-right"></i></a></p>
+            </div>
+        </div>
+        <!-- innerbox starts -->
+        <div id="container1"></div>
+        <!-- innerbox ends -->
+    </div>
+<!-- flash Deal outer box starts -->
+    
+    <!-- new arrival outer box starts -->
+    <div id="outerbox1">
+        <div id="newArrivalHead">
+            <div><h2><i class="fa-solid fa-arrow-trend-up"></i> New Arrival</h2></div>
+            <div id="seemore">
+                <p><a href=""> See more <i class="fa-solid fa-angle-right"></i></a></p>
+            </div>
+        </div>
+        <!-- innerbox starts -->
+        <div id="container2"></div>
+        <!-- innerbox ends -->
+    </div>
+     <!-- new arrival outer box ends -->
+
+
+<!-- recommend box starts -->
+     <div id="recommend"> 
+         <div>
+            <h2>Recommendations For You</h2>
+         </div>
+         <div>
+             <p>, customer</p>
+         </div>
+     </div>
+
+     <div id="filters">
+        <div>
+           <!-- filtering by category starts -->
+            <select name="category" id="category" onchange="handleCategory ()">
+                <option value="">Filter by Category</option>
+                <option value="Tops">Tops</option>
+                <option value="Bottom">Bottom</option>
+                <option value="Sleepware">Sleepware</option>
+                <option value="Outware">Outware</option>
+                <option value="Outdoors">Outdoor</option>
+            </select>
+           <!-- filtering by category ends -->
+
+        </div>
+        <div>
+                 <!-- sorting by price start -->
+                <select name="price" id="price" onchange="handleprice ()">
+                    <option value="">Sort by Price</option>
+                    <option value="lth">High to Low</option>
+                    <option value="htl">Low to High</option>
+                </select>
+                 <!-- sorting by price ends -->
+        </div>
+    
+    </div>
+
+    <div id="container"></div>
+<!-- recommend box ends -->
+</body>
+</html>
+<script src="mens.js"></script>
